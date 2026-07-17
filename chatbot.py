@@ -17,7 +17,7 @@ DEFAULT_RESPONSE = (
 
 
 def load_dataset(filepath):
-    """Read the CSV dataset and build a list of (keywords_list, answer) pairs."""
+    #Read the CSV dataset and build a list of (keywords_list, answer) pairs.
     qa_pairs = []
     filepath = os.path.join(os.path.dirname(__file__), filepath)
 
