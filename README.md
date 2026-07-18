@@ -24,7 +24,7 @@ placements, exams, scholarships, hello) using keyword pattern matching.
 
 3. Type a question, e.g.:
    ```
-   You: what are the fees
+   You: what are the fees for this course
    Bot: The course fee is Rs. 50,000 per semester, payable in two installments.
    ```
 
