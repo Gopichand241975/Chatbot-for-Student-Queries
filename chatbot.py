@@ -12,7 +12,7 @@ import os
 DATASET_FILE = "qa_dataset.csv"
 EXIT_WORDS = ("bye", "exit", "quit", "goodbye", "see you")
 DEFAULT_RESPONSE = (
-    "Sorry, I didn't understand that. Try asking about courses, timings, "
+    "Sorry, I didn't understand that.Try asking about courses, timings, "
     "fees, admissions, hostel, library, placements, exams, or scholarships."
 )
 
