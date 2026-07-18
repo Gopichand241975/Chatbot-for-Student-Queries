@@ -8,6 +8,7 @@ import csv
 import string
 import os
 
+#dataset was created 
 DATASET_FILE = "qa_dataset.csv"
 EXIT_WORDS = ("bye", "exit", "quit", "goodbye", "see you")
 DEFAULT_RESPONSE = (
@@ -16,6 +17,7 @@ DEFAULT_RESPONSE = (
 )
 
 
+#load dataset
 def load_dataset(filepath):
     #Read the CSV dataset and build a list of (keywords_list, answer) pairs.
     qa_pairs = []
