@@ -42,7 +42,7 @@ def clean_input(text):
 
 
 def is_exit(cleaned_text):
-    """Check if the cleaned input matches any exit word."""
+    #Check if the cleaned input matches any exit word.
     return any(word in cleaned_text for word in EXIT_WORDS)
 
 
