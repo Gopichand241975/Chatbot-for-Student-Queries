@@ -2,7 +2,7 @@
 
 A simple rule-based chatbot that answers common student questions
 (courses, timings, fees, contact info, admissions, hostel, library,
-placements, exams, scholarships) using keyword pattern matching.
+placements, exams, scholarships, hello) using keyword pattern matching.
 
 ## Files
 
