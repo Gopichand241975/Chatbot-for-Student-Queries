@@ -37,4 +37,4 @@ placements, exams, scholarships, hello) using keyword pattern matching.
 3. The cleaned text is checked against each row's keyword list.
 4. The first matching row's answer is shown to the user.
 5. If no keyword matches, a default fallback message is shown.
-6. Typing an exit word (bye/exit/quit/goodbye) ends the loop.
+6. Typing an exit word (bye/exit/quit/goodbye) ends the loop..
