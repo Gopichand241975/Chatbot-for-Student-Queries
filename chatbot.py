@@ -4,6 +4,8 @@ A simple rule-based chatbot that answers common student questions
 by matching user input against keywords stored in qa_dataset.csv.
 """
 
+#import csv,string and os 
+
 import csv
 import string
 import os
