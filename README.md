@@ -1,40 +1,39 @@
 # Student Query Chatbot
 
+![User Input Screenshot](Screenshots/user input.png)
+
 A simple rule-based chatbot that answers common student questions
 (courses, timings, fees, contact info, admissions, hostel, library,
-placements, exams, scholarships, hello) using keyword pattern matching.
+placements, exams, scholarships) using keyword pattern matching.
+Available in both **console** and **web (Flask)** interface.
 
 ## Files
 
 - `qa_dataset.csv` — the prepared dataset of question keywords and answers
-- `chatbot.py` — main program (input handling, matching logic, exit option)
-- `requirements.txt` — dependency list (none required by default)
+- `chatbot.py` — core logic (input handling, matching, exit option) used by both interfaces
+- `app.py` — Flask web server that reuses `chatbot.py` functions
+- `templates/index.html` — chat page for the web interface
+- `requirements.txt` — dependency list
 
-## How to run
+## How to run (Console)
 
-1. Make sure Python 3 is installed:
-   ```
-   python --version
-   ```
+```bash
+python chatbot.py
+```
 
-2. Open a terminal in this folder and run:
-   ```
-   python chatbot.py
-   ```
+## How to run (Web)
 
-3. Type a question, e.g.:
-   ```
-   You: what are the fees for this course
-   Bot: The course fee is Rs. 50,000 per semester, payable in two installments.
-   ```
-
-4. Type `bye` or `exit` to end the chat.
+```bash
+pip install flask
+python app.py
+```
+Then open `http://127.0.0.1:5000` in your browser.
 
 ## How it works
 
-1. The chatbot loads `qa_dataset.csv` into memory at startup.
-2. Each user message is lowercased and stripped of punctuation.
-3. The cleaned text is checked against each row's keyword list.
-4. The first matching row's answer is shown to the user.
-5. If no keyword matches, a default fallback message is shown.
-6. Typing an exit word (bye/exit/quit/goodbye) ends the loop.
+1. The dataset is loaded from `qa_dataset.csv` at startup.
+2. User input is lowercased and stripped of punctuation.
+3. Cleaned text is matched against each row's keyword list.
+4. The first matching row's answer is returned.
+5. If nothing matches, a default fallback message is shown.
+6. Typing an exit word (bye/exit/quit) ends the console chat.
