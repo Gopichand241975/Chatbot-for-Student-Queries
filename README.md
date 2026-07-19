@@ -1,6 +1,6 @@
 # Student Query Chatbot
 
-![User Input Screenshot](Screenshots/user input.png)
+![User Input Screenshot](Screenshots/user%20input.png)
 
 A simple rule-based chatbot that answers common student questions
 (courses, timings, fees, contact info, admissions, hostel, library,
