@@ -5,7 +5,7 @@
 A simple rule-based chatbot that answers common student questions
 (courses, timings, fees, contact info, admissions, hostel, library,
 placements, exams, scholarships) using keyword pattern matching.
-Available in both **console** and **web (Flask)** interface.
+Available in both **console** and **web (Flask)** interface .
 
 ## Files
 
